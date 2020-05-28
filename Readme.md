@@ -1,7 +1,7 @@
 # Личный проект «TaskForce»
 
 * Студент: [Виктор Объедков](https://up.htmlacademy.ru/yii/1/user/1488503).
-* Наставник: `Неизвестно`.
+* Наставник: [Витя Сорокин](https://htmlacademy.ru/profile/id1252059).
 
 ---
 
