@@ -43,4 +43,5 @@ class Task
             return TaskStatus::FAILED;
         }
     }
+    public $status;
 }
