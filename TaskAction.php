@@ -3,8 +3,7 @@
 class TaskAction
 {
     const CANCEL = "Cancel";
-    const RESPOND = "Respond";
-    const  FAILED = "Failed";
-    const EXECUTE = "Execute";
-    const REFUSE = "Refuse";
+    const IN_PROGRESS = "in progress";
+    const COMPLECTED = "Completed";
+    const FAILED = "Failed";
 }

@@ -1,5 +1,4 @@
 <?php
-$getStatusList = getStatusList();
 
 class Task
 {
@@ -24,9 +23,24 @@ class Task
         return [
             TaskAction::FAILED => "Провалено",
             TaskAction::CANCEL => "Отменить",
-            TaskAction::EXECUTE => "Выполнять",
-            TaskAction::REFUSE => "Отказаться",
-            TaskAction::RESPOND => "отзываться",
+            TaskAction::IN_PROGRESS => "В работе",
+            TaskAction::COMPLECTED => "Выполнить",
         ];
+    }
+
+    public function getStatusByAction($actionName)
+    {
+        if ($actionName == TaskAction::CANCEL) {
+            return TaskStatus::CANCELED;
+        }
+        if ($actionName == TaskAction::IN_PROGRESS) {
+            return TaskStatus::IN_WORK;
+        }
+        if ($actionName == TaskAction::COMPLECTED) {
+            return TaskStatus::DONE;
+        }
+        if ($actionName == TaskAction::FAILED) {
+            return TaskStatus::FAILED;
+        }
     }
 }
