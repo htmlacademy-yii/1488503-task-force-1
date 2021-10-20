@@ -2,10 +2,9 @@
 
 class Task
 {
-    const ACTION_CARD = 'card';
-    const ACTION_RESPOND = 'respond';
-    const ACTION_REFUSE = 'refuse';
-    const ACTION_WRITE_MESSAGE = 'write message';
+    public $status = TaskStatus::IN_WORK;
+    public $executorId = TaskStatus::NEW;
+    public $customerId = TaskStatus::DONE;
 
     public function getStatusList()
     {
@@ -43,5 +42,5 @@ class Task
             return TaskStatus::FAILED;
         }
     }
-    public $status;
+
 }
